@@ -1,0 +1,266 @@
+* {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Barra de Navegação */
+
+#header-barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 5.24vh;
+  background-color: #f1f1f1;
+}
+
+#header-barra-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 1.7rem;
+  border-right: 2px solid #dfdfdf;
+}
+
+header #header-barra #header-barra-left img {
+  vertical-align: text-bottom;
+  width: 2.688rem;
+  height: 3.11vh;
+}
+
+header #header-barra #header-barra-left a {
+  font-size: 0.75rem;
+  color: #606060;
+  font-weight: 700;
+}
+
+#header-barra-right {
+  height: 100%;
+}
+
+#header-barra-right li {
+  display: inline;
+  list-style: none;
+  padding: 0.438rem 0.938rem 0.438rem 0.813rem;
+  border-left: 2px solid #dfdfdf;
+  height: 100%;
+}
+
+#header-barra-right li a {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #606060;
+}
+
+#header-barra-right li #covid-19 {
+  color: red;
+}
+
+#header-barra-right li img {
+  vertical-align: middle;
+}
+
+/* Banner Sistema Acadêmico */
+
+header #banner-sa #banner-sa-top {
+  width: 100%;
+  height: 23.9vh;
+  display: flex;
+  align-items: center;
+  background-color: #0a5517;
+  background-image: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #19882c 1%,
+    #025310 100%
+  );
+  background-image: -webkit-gradient(
+    radial,
+    center center,
+    0,
+    center center,
+    100%,
+    color-stop(1%, #19882c),
+    color-stop(100%, #025310)
+  );
+  background-image: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #19882c 1%,
+    #025310 100%
+  );
+  background-image: -o-radial-gradient(
+    center,
+    ellipse cover,
+    #19882c 1%,
+    #025310 100%
+  );
+  background-image: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    #19882c 1%,
+    #025310 100%
+  );
+  background-image: radial-gradient(
+    ellipse at center,
+    #19882c 1%,
+    #025310 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=darken(#19882C,3),endColorstr=#025310,GradientType=1);
+}
+
+#banner-sa-top-titulo {
+  padding-left: 1.3rem;
+}
+
+#banner-sa-top a #banner-sa-top-titulo h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+#banner-sa-top a #banner-sa-top-titulo p {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+#banner-sa-bottom {
+  width: 100%;
+  height: 5vh;
+  background-color: #00420c;
+}
+
+/* Aside Site do IFMS */
+
+aside {
+  margin: 1.3rem 1rem;
+  width: 12rem;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0.3rem;
+  float: left;
+}
+
+#site-do-ifms p {
+  margin-left: 0.6rem;
+  font-size: 0.875rem;
+  color: #172938;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  margin-top: 1.3rem;
+  height: auto;
+  margin-bottom: 24vh;
+}
+
+main header {
+  display: flex;
+  width: 98%;
+  height: 9.724473257698541vh;
+  background-color: #eeeff1;
+  border-top: 4px solid #017b16;
+  padding: 0.6rem 0 0 0.6rem;
+}
+
+main header h2 {
+  line-height: 23px;
+  color: #017b16;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+main p {
+  font-size: 0.875rem;
+  color: #172938;
+  line-height: 21px;
+  padding: 1rem 0;
+}
+
+/* Formulário */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+form label {
+  font-weight: 700;
+  font-size: 0.76rem;
+  color: #000000;
+}
+
+form #cpf,
+#data-de-nascimento,
+select {
+  width: 16rem;
+  height: 5.5vh;
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 0.7rem;
+  font-size: 0.875rem;
+}
+
+form #cpf:focus,
+#data-de-nascimento:focus,
+select:focus {
+  border: 1px solid #66afe9;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: .5px .5px 5px #66afe9;
+}
+
+form #submit {
+  width: 4.125rem;
+  height: 5.5vh;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+form #submit:hover {
+  cursor: pointer;
+  background-color: #286090;
+}
+
+
+
+
+
+footer p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+footer #footer-barra {
+  width: 100%;
+  height: 11.94vh;
+  background-color: #00420C;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
