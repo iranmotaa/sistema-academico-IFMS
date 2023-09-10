@@ -42,15 +42,23 @@ header #header-barra #header-barra-left a {
 }
 
 #header-barra-right {
+  height: 5.24vh;
+}
+
+#header-barra-right ul {
   height: 100%;
+  display: flex;
 }
 
 #header-barra-right li {
-  display: inline;
-  list-style: none;
-  padding: 0.438rem 0.938rem 0.438rem 0.813rem;
-  border-left: 2px solid #dfdfdf;
   height: 100%;
+  list-style: none;
+  border-left: 2px solid #dfdfdf;
+  padding: 0 0.8rem 0 0.7rem;
+}
+
+#header-barra-right li:nth-child(-n + 6){
+  padding-top: 0.2rem;
 }
 
 #header-barra-right li a {
@@ -63,8 +71,31 @@ header #header-barra #header-barra-left a {
   color: red;
 }
 
-#header-barra-right li img {
-  vertical-align: middle;
+#header-barra-right li img:hover {
+  cursor: pointer;
+}
+
+#barra-libras-popup {
+  display: none;
+  position: relative;
+  left: 41.4vw;
+  top: 0.1vh;
+  width: 11.5rem;
+  height: 40vh;
+  background-color: #f1f1f1;
+  padding: 0.625rem 1.5rem;
+}
+
+#barra-libras-popup p {
+  display: inline;
+  color: #606060;
+  font-weight: 700;
+  line-height: 1.313rem;
+  font-size: 0.75rem;
+}
+
+#barra-libras-popup p a {
+  color: #65a0bc;
 }
 
 /* Banner Sistema Acadêmico */
@@ -154,7 +185,7 @@ aside {
   color: #172938;
 }
 
-#site-do-ifms p:hover{
+#site-do-ifms p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -191,9 +222,21 @@ main p {
   padding: 1rem 0;
 }
 
-#libras-fixed {
+#libras-fixed-image {
   position: fixed;
-  left: 96%;
+  left: 95vw;
+  top: 49vh;
+}
+
+#libras-fixed #libras-popup {
+  position: fixed;
+  left: 83vw;
+  top: 49vh;
+  display: none;
+}
+
+#libras-fixed #libras-fixed-image {
+  cursor: pointer;
 }
 
 /* Formulário */
@@ -256,9 +299,10 @@ form #submit:hover {
 
 /* Formulário Lateral */
 
-#form-lateral{
-  position: absolute;
-  left: 39%;
+#form-lateral {
+  position: relative;
+  left: 18rem;
+  bottom: 25rem;
   width: 16rem;
   height: 20vh;
 }
@@ -268,7 +312,7 @@ form #submit:hover {
   text-align: center;
   background-color: #fff;
   margin-left: 40%;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   text-align: center;
   font-weight: bold;
   font-size: 0.75rem;
@@ -278,7 +322,7 @@ form #submit:hover {
   width: 15.688rem;
   height: 5vh;
   border-top: 1px solid #ccc;
-  margin-top: -.8rem;
+  margin-top: -0.8rem;
   text-align: center;
 }
 
@@ -293,7 +337,7 @@ form #submit:hover {
 
 #form-lateral button a {
   font-size: 1.125rem;
-  color: #333333;
+  color: #3366A1;
 }
 
 #form-lateral img {

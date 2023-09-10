@@ -58,9 +58,13 @@
               >
             </li>
             <li>
-              <img src="assets/image/logo-libras.svg" alt="logo libras" />
+              <img src="assets/image/logo-libras.svg" id="barra-logo-libras" alt="logo libras" />
             </li>
           </ul>
+          <div id="barra-libras-popup">
+            <img src="assets/image/vlibras-barra-navegacao.gif" alt="">
+            <p>O conteúdo desse portal pode ser acessível em Libras usando o <a href="https://www.gov.br/governodigital/pt-br/vlibras/">VLibras</a></p>
+          </div>
         </div>
       </nav>
 
@@ -86,7 +90,8 @@
     <main>
 
       <div id="libras-fixed">
-        <img src="assets/image/logo-libras-fixed.svg" alt="Libras Acessibilidade">
+        <img id="libras-popup" src="assets/image/libras-access_popup.svg" alt="">
+        <img id="libras-fixed-image" src="assets/image/logo-libras-fixed.svg" alt="Libras Acessibilidade">
       </div>
 
       <!-- Formulário -->
@@ -122,6 +127,7 @@
           placeholder="dd/mm/aaaa"
           required=""
           maxlength="8"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
         />
         <label for="captcha">Captcha</label>
         <iframe
